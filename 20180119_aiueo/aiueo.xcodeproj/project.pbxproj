@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		129D03AB84E18FA1D157A3E6 /* learner_tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D78E06B11626A2349C90D8F /* learner_tagger.cpp */; };
+		13BF374C3211139CAE197CF5 /* iconv_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A377DB9E5BDEA6B1DDE94F2B /* iconv_utils.cpp */; };
+		142210A6F34499E823B83F04 /* context_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E7C3ABCA9DC7B87836AD0 /* context_id.cpp */; };
+		1681012574CFD359840DE827 /* tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70341E64B653E52F4753B4A7 /* tagger.cpp */; };
+		26FC11E9B04AFE801B2CB665 /* nbest_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D45F4A6F2F5045857F7EC701 /* nbest_generator.cpp */; };
+		2A377547F087776F61054CD4 /* ofxMeCab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 858044948022587F6A5A83B0 /* ofxMeCab.cpp */; };
+		3DD4B9E3AE841F4FE91641F9 /* dictionary_compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7296E824058B8BC1D6626733 /* dictionary_compiler.cpp */; };
+		41CB8F23AEE490B4330C2649 /* viterbi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1A1F96CB22DA56DB2DFEF51 /* viterbi.cpp */; };
+		619A96B1008477BBBFA40C58 /* feature_index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8208259AF1F9BA47D5E6B5D2 /* feature_index.cpp */; };
+		6439A6467CF7009141BBD3AC /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED6766F08E4B116096E7FC3C /* utils.cpp */; };
+		74A02EE5D86C3E8C641252F0 /* string_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61799520DBFED3EB3D05690B /* string_buffer.cpp */; };
+		75AD5110108C83CC25DD4FFA /* ofxWatchFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 678871D2EDBC56000965682D /* ofxWatchFile.cpp */; };
+		8A48D9D61F35FB9D611DE56D /* eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222E309D6FCD222221BAA046 /* eval.cpp */; };
+		9688115C260C23BE187AC0AC /* connector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CD4917DAB331440DADDE3B /* connector.cpp */; };
+		98EEB9806CEFEC2C73512199 /* dictionary_rewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA76A45632022CEE52D511C9 /* dictionary_rewriter.cpp */; };
+		B21A0CE3ECC303BE8BB7ECE8 /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BB302FBD1E2C081250A209E /* param.cpp */; };
+		BC89325E7DAE000F5A0516EA /* char_property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573328E05AF10210BE4FB0E5 /* char_property.cpp */; };
+		C2886D1EF97AD9AD9C2011FE /* dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F656C134B9B59BB7D8AC0A66 /* dictionary.cpp */; };
+		C7F0B74C0BD554A1C9B5BAA5 /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE905398001ACFC4E6AFFD1D /* writer.cpp */; };
+		C9396028FAE75CDE2856FCD9 /* libmecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D6C341AB958E690DE8028 /* libmecab.cpp */; };
+		D4BEAE29879EC132A35A9932 /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8440BDD52F0FFCF8436E8926 /* tokenizer.cpp */; };
+		D6B5AC909611DA9DEF6C2743 /* learner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49226EC4B4A6D07C7D8C1762 /* learner.cpp */; };
+		DD66C9D16D9E5EED5080E023 /* dictionary_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FECE7D72B1D393DA938A7 /* dictionary_generator.cpp */; };
+		E3CF8B2AFAAAAC6E019D4CEE /* lbfgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5D8FC09ACF3AA5ED0DE10 /* lbfgs.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		EDD3448A1F73BF611F4D46A8 /* ofxTrueTypeFontUC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43B2FDAED735D73FF734F634 /* ofxTrueTypeFontUC.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0703D8ADDE2CB2E0A71D076A /* ofxWatchFile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWatchFile.h; path = ../../../addons/ofxWatchFile/src/ofxWatchFile.h; sourceTree = SOURCE_ROOT; };
+		0AD5D8FC09ACF3AA5ED0DE10 /* lbfgs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = lbfgs.cpp; path = ../../../addons/ofxMeCab/libs/mecab/lbfgs.cpp; sourceTree = SOURCE_ROOT; };
+		222E309D6FCD222221BAA046 /* eval.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = eval.cpp; path = ../../../addons/ofxMeCab/libs/mecab/eval.cpp; sourceTree = SOURCE_ROOT; };
+		22FDF81C4A468B788F424022 /* ofxTrueTypeFontUC.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTrueTypeFontUC.h; path = ../../../addons/ofxTrueTypeFontUC/src/ofxTrueTypeFontUC.h; sourceTree = SOURCE_ROOT; };
+		28FBC8F18E1864A4E85D7000 /* connector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = connector.h; path = ../../../addons/ofxMeCab/libs/mecab/connector.h; sourceTree = SOURCE_ROOT; };
+		2A833E11360FB86A6FA8D170 /* iconv_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = iconv_utils.h; path = ../../../addons/ofxMeCab/libs/mecab/iconv_utils.h; sourceTree = SOURCE_ROOT; };
+		2EB48118232BC9F5034E496E /* mecab.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mecab.h; path = ../../../addons/ofxMeCab/libs/mecab/mecab.h; sourceTree = SOURCE_ROOT; };
+		2F4282ACF6E7F53D781892C8 /* stream_wrapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_wrapper.h; path = ../../../addons/ofxMeCab/libs/mecab/stream_wrapper.h; sourceTree = SOURCE_ROOT; };
+		3295C3F416CB04928C795D95 /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = config.h; path = ../../../addons/ofxMeCab/libs/mecab/config.h; sourceTree = SOURCE_ROOT; };
+		346029F202C8CC25B6BD8025 /* ofxMeCab.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxMeCab.hpp; path = ../../../addons/ofxMeCab/src/ofxMeCab.hpp; sourceTree = SOURCE_ROOT; };
+		3654F7F59466507161CB9A7C /* convert.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = convert.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json/utils/convert.hpp; sourceTree = SOURCE_ROOT; };
+		3EEC5B2925778468F32FBCDC /* mmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mmap.h; path = ../../../addons/ofxMeCab/libs/mecab/mmap.h; sourceTree = SOURCE_ROOT; };
+		3F1D42652446AA99CED163B0 /* common.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = common.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json/utils/common.hpp; sourceTree = SOURCE_ROOT; };
+		40CD4917DAB331440DADDE3B /* connector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = connector.cpp; path = ../../../addons/ofxMeCab/libs/mecab/connector.cpp; sourceTree = SOURCE_ROOT; };
+		411D8DCE7D054ADE90369A8E /* darts.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = darts.h; path = ../../../addons/ofxMeCab/libs/mecab/darts.h; sourceTree = SOURCE_ROOT; };
+		43B2FDAED735D73FF734F634 /* ofxTrueTypeFontUC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTrueTypeFontUC.cpp; path = ../../../addons/ofxTrueTypeFontUC/src/ofxTrueTypeFontUC.cpp; sourceTree = SOURCE_ROOT; };
+		43F2437E331685602959DFDD /* learner_tagger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = learner_tagger.h; path = ../../../addons/ofxMeCab/libs/mecab/learner_tagger.h; sourceTree = SOURCE_ROOT; };
+		48164068DB2C8BE6925B328E /* tokenizer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tokenizer.h; path = ../../../addons/ofxMeCab/libs/mecab/tokenizer.h; sourceTree = SOURCE_ROOT; };
+		483FB1A1F200B291F7A60741 /* scoped_ptr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = scoped_ptr.h; path = ../../../addons/ofxMeCab/libs/mecab/scoped_ptr.h; sourceTree = SOURCE_ROOT; };
+		49226EC4B4A6D07C7D8C1762 /* learner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = learner.cpp; path = ../../../addons/ofxMeCab/libs/mecab/learner.cpp; sourceTree = SOURCE_ROOT; };
+		4D78E06B11626A2349C90D8F /* learner_tagger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = learner_tagger.cpp; path = ../../../addons/ofxMeCab/libs/mecab/learner_tagger.cpp; sourceTree = SOURCE_ROOT; };
+		4E46916BA00B4A7A8BD3EB14 /* utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = utils.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json/utils.hpp; sourceTree = SOURCE_ROOT; };
+		52F936897CC1FD65F9C8141D /* dictionary_rewriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dictionary_rewriter.h; path = ../../../addons/ofxMeCab/libs/mecab/dictionary_rewriter.h; sourceTree = SOURCE_ROOT; };
+		54FFC761361D3BF8A65C3430 /* ucstable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ucstable.h; path = ../../../addons/ofxMeCab/libs/mecab/ucstable.h; sourceTree = SOURCE_ROOT; };
+		56B07F7BD97C059E5ED012A0 /* nbest_generator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = nbest_generator.h; path = ../../../addons/ofxMeCab/libs/mecab/nbest_generator.h; sourceTree = SOURCE_ROOT; };
+		573328E05AF10210BE4FB0E5 /* char_property.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = char_property.cpp; path = ../../../addons/ofxMeCab/libs/mecab/char_property.cpp; sourceTree = SOURCE_ROOT; };
+		5E130850C993DB5334E7926B /* ofxJsonConvertFunctions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJsonConvertFunctions.h; path = ../../../addons/ofxJsonUtils/src/ofxJsonConvertFunctions.h; sourceTree = SOURCE_ROOT; };
+		5E3E7C3ABCA9DC7B87836AD0 /* context_id.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = context_id.cpp; path = ../../../addons/ofxMeCab/libs/mecab/context_id.cpp; sourceTree = SOURCE_ROOT; };
+		60B63868CAEA655FC5BD7CCB /* common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = common.h; path = ../../../addons/ofxMeCab/libs/mecab/common.h; sourceTree = SOURCE_ROOT; };
+		61799520DBFED3EB3D05690B /* string_buffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = string_buffer.cpp; path = ../../../addons/ofxMeCab/libs/mecab/string_buffer.cpp; sourceTree = SOURCE_ROOT; };
+		62E7DF8E328CEEB6DC16BC08 /* parse.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = parse.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json/utils/parse.hpp; sourceTree = SOURCE_ROOT; };
+		678871D2EDBC56000965682D /* ofxWatchFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWatchFile.cpp; path = ../../../addons/ofxWatchFile/src/ofxWatchFile.cpp; sourceTree = SOURCE_ROOT; };
+		67DFCCFFAF7EBB7C98B14C7D /* ofxJsonify.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJsonify.h; path = ../../../addons/ofxJsonUtils/src/ofxJsonify.h; sourceTree = SOURCE_ROOT; };
+		6B9D6C341AB958E690DE8028 /* libmecab.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = libmecab.cpp; path = ../../../addons/ofxMeCab/libs/mecab/libmecab.cpp; sourceTree = SOURCE_ROOT; };
+		70341E64B653E52F4753B4A7 /* tagger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tagger.cpp; path = ../../../addons/ofxMeCab/libs/mecab/tagger.cpp; sourceTree = SOURCE_ROOT; };
+		7296E824058B8BC1D6626733 /* dictionary_compiler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = dictionary_compiler.cpp; path = ../../../addons/ofxMeCab/libs/mecab/dictionary_compiler.cpp; sourceTree = SOURCE_ROOT; };
+		78AFBACE55CF22134BEE2319 /* ofxJsonUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJsonUtils.h; path = ../../../addons/ofxJsonUtils/src/ofxJsonUtils.h; sourceTree = SOURCE_ROOT; };
+		79C188A0D0A763A1B7836308 /* utility.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = utility.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json/utils/utility.hpp; sourceTree = SOURCE_ROOT; };
+		7BB302FBD1E2C081250A209E /* param.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = param.cpp; path = ../../../addons/ofxMeCab/libs/mecab/param.cpp; sourceTree = SOURCE_ROOT; };
+		817089F4BA341F36B202A6A9 /* constants.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = constants.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json/utils/constants.hpp; sourceTree = SOURCE_ROOT; };
+		8208259AF1F9BA47D5E6B5D2 /* feature_index.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = feature_index.cpp; path = ../../../addons/ofxMeCab/libs/mecab/feature_index.cpp; sourceTree = SOURCE_ROOT; };
+		822A69850D68DE28E72545DF /* param.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = param.h; path = ../../../addons/ofxMeCab/libs/mecab/param.h; sourceTree = SOURCE_ROOT; };
+		8440BDD52F0FFCF8436E8926 /* tokenizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tokenizer.cpp; path = ../../../addons/ofxMeCab/libs/mecab/tokenizer.cpp; sourceTree = SOURCE_ROOT; };
+		851FA9648111715E142A9C8E /* utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = utils.h; path = ../../../addons/ofxMeCab/libs/mecab/utils.h; sourceTree = SOURCE_ROOT; };
+		858044948022587F6A5A83B0 /* ofxMeCab.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxMeCab.cpp; path = ../../../addons/ofxMeCab/src/ofxMeCab.cpp; sourceTree = SOURCE_ROOT; };
+		90449B1B8B27564BD56BD886 /* lbfgs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = lbfgs.h; path = ../../../addons/ofxMeCab/libs/mecab/lbfgs.h; sourceTree = SOURCE_ROOT; };
+		9345049814BFB3DAA915193B /* learner_node.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = learner_node.h; path = ../../../addons/ofxMeCab/libs/mecab/learner_node.h; sourceTree = SOURCE_ROOT; };
+		98D63FF539ED189352F012D1 /* context_id.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = context_id.h; path = ../../../addons/ofxMeCab/libs/mecab/context_id.h; sourceTree = SOURCE_ROOT; };
+		9B2FECE7D72B1D393DA938A7 /* dictionary_generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = dictionary_generator.cpp; path = ../../../addons/ofxMeCab/libs/mecab/dictionary_generator.cpp; sourceTree = SOURCE_ROOT; };
+		9FD37AD95BF67E5BBF67A993 /* writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = writer.h; path = ../../../addons/ofxMeCab/libs/mecab/writer.h; sourceTree = SOURCE_ROOT; };
+		A1A1F96CB22DA56DB2DFEF51 /* viterbi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = viterbi.cpp; path = ../../../addons/ofxMeCab/libs/mecab/viterbi.cpp; sourceTree = SOURCE_ROOT; };
+		A377DB9E5BDEA6B1DDE94F2B /* iconv_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = iconv_utils.cpp; path = ../../../addons/ofxMeCab/libs/mecab/iconv_utils.cpp; sourceTree = SOURCE_ROOT; };
+		A70732E3D07F9B8A9A9A2988 /* winmain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winmain.h; path = ../../../addons/ofxMeCab/libs/mecab/winmain.h; sourceTree = SOURCE_ROOT; };
+		AFD594BBDFD8F244AB72B6E4 /* ofxJsonParseFunctions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJsonParseFunctions.h; path = ../../../addons/ofxJsonUtils/src/ofxJsonParseFunctions.h; sourceTree = SOURCE_ROOT; };
+		B5494CEEBD6459FA0657E179 /* viterbi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = viterbi.h; path = ../../../addons/ofxMeCab/libs/mecab/viterbi.h; sourceTree = SOURCE_ROOT; };
+		B60EED3FA2912785D5149ADF /* string_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = string_buffer.h; path = ../../../addons/ofxMeCab/libs/mecab/string_buffer.h; sourceTree = SOURCE_ROOT; };
+		B718D5A27209ECE7B2D70070 /* thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread.h; path = ../../../addons/ofxMeCab/libs/mecab/thread.h; sourceTree = SOURCE_ROOT; };
+		B9F3E3165564ECA88A787476 /* dictionary.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dictionary.h; path = ../../../addons/ofxMeCab/libs/mecab/dictionary.h; sourceTree = SOURCE_ROOT; };
+		BF6C06B4D495A9C9FC7D293A /* feature_index.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = feature_index.h; path = ../../../addons/ofxMeCab/libs/mecab/feature_index.h; sourceTree = SOURCE_ROOT; };
+		C4F87C0D37E0E8C2FFFECA34 /* json.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = json.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json.hpp; sourceTree = SOURCE_ROOT; };
+		CAB32FB6C7A3F99C766D69C1 /* ofJson_compatible.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofJson_compatible.h; path = ../../../addons/ofxJsonUtils/src/ofJson_compatible.h; sourceTree = SOURCE_ROOT; };
+		CDAB81F02945A860A64E2B84 /* ofxJsonUtilsUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJsonUtilsUtils.h; path = ../../../addons/ofxJsonUtilsUtils/src/ofxJsonUtilsUtils.h; sourceTree = SOURCE_ROOT; };
+		D45F4A6F2F5045857F7EC701 /* nbest_generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = nbest_generator.cpp; path = ../../../addons/ofxMeCab/libs/mecab/nbest_generator.cpp; sourceTree = SOURCE_ROOT; };
+		DB2C972E3AE203690DF03BF8 /* char_property.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = char_property.h; path = ../../../addons/ofxMeCab/libs/mecab/char_property.h; sourceTree = SOURCE_ROOT; };
+		DE905398001ACFC4E6AFFD1D /* writer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = writer.cpp; path = ../../../addons/ofxMeCab/libs/mecab/writer.cpp; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* aiueoDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aiueoDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E70FB2E81469D1C08A358D2F /* freelist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = freelist.h; path = ../../../addons/ofxMeCab/libs/mecab/freelist.h; sourceTree = SOURCE_ROOT; };
+		EA76A45632022CEE52D511C9 /* dictionary_rewriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = dictionary_rewriter.cpp; path = ../../../addons/ofxMeCab/libs/mecab/dictionary_rewriter.cpp; sourceTree = SOURCE_ROOT; };
+		ED6766F08E4B116096E7FC3C /* utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = utils.cpp; path = ../../../addons/ofxMeCab/libs/mecab/utils.cpp; sourceTree = SOURCE_ROOT; };
+		F2080D487D349B888BCFF68D /* ofxJsonUtilsUtilsContainer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJsonUtilsUtilsContainer.h; path = ../../../addons/ofxJsonUtilsUtils/src/ofxJsonUtilsUtilsContainer.h; sourceTree = SOURCE_ROOT; };
+		F45F06A8719AFE78BC5D430F /* ofxJsonUtilsUtilsEx_ImGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJsonUtilsUtilsEx_ImGui.h; path = ../../../addons/ofxJsonUtilsUtils/src/ofxJsonUtilsUtilsEx_ImGui.h; sourceTree = SOURCE_ROOT; };
+		F656C134B9B59BB7D8AC0A66 /* dictionary.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = dictionary.cpp; path = ../../../addons/ofxMeCab/libs/mecab/dictionary.cpp; sourceTree = SOURCE_ROOT; };
+		FE921E4A3C8B894297C911DD /* json.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = json.hpp; path = ../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json/src/json.hpp; sourceTree = SOURCE_ROOT; };
+		FF462C5F0A882C6B5E1AE4A2 /* ucs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ucs.h; path = ../../../addons/ofxMeCab/libs/mecab/ucs.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0816FAE6729FD8D7120D0B77 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				43B2FDAED735D73FF734F634 /* ofxTrueTypeFontUC.cpp */,
+				22FDF81C4A468B788F424022 /* ofxTrueTypeFontUC.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		0957B9F4E6248627ABA70CE2 /* ofxMeCab */ = {
+			isa = PBXGroup;
+			children = (
+				F47BB7666D43B88C880C32B3 /* src */,
+				28C4DC10BE25D8AF64FB0CAC /* libs */,
+			);
+			name = ofxMeCab;
+			sourceTree = "<group>";
+		};
+		2354AB7B3AA36643D7807748 /* ofxJsonUtils */ = {
+			isa = PBXGroup;
+			children = (
+				491F50E842385CA9DD42433A /* src */,
+				FD8BFC81264625508D93DE86 /* libs */,
+			);
+			name = ofxJsonUtils;
+			sourceTree = "<group>";
+		};
+		27DDB179D85402214CB7B90C /* json */ = {
+			isa = PBXGroup;
+			children = (
+				7EE33BB79A063D7AD2178297 /* libs */,
+				C4709098A31A15183A03E72F /* utils */,
+				4E46916BA00B4A7A8BD3EB14 /* utils.hpp */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		28C4DC10BE25D8AF64FB0CAC /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8A8758D9CD1336FFE098E79C /* mecab */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		3AA5C00BACC1381EC74822A5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CDAB81F02945A860A64E2B84 /* ofxJsonUtilsUtils.h */,
+				F2080D487D349B888BCFF68D /* ofxJsonUtilsUtilsContainer.h */,
+				F45F06A8719AFE78BC5D430F /* ofxJsonUtilsUtilsEx_ImGui.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		3D94A3FAE7A0AA4DD0FAAC2B /* bbb */ = {
+			isa = PBXGroup;
+			children = (
+				27DDB179D85402214CB7B90C /* json */,
+				C4F87C0D37E0E8C2FFFECA34 /* json.hpp */,
+			);
+			name = bbb;
+			sourceTree = "<group>";
+		};
+		42BB3EAB3368043B7C98F513 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FE921E4A3C8B894297C911DD /* json.hpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		491F50E842385CA9DD42433A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CAB32FB6C7A3F99C766D69C1 /* ofJson_compatible.h */,
+				5E130850C993DB5334E7926B /* ofxJsonConvertFunctions.h */,
+				67DFCCFFAF7EBB7C98B14C7D /* ofxJsonify.h */,
+				AFD594BBDFD8F244AB72B6E4 /* ofxJsonParseFunctions.h */,
+				78AFBACE55CF22134BEE2319 /* ofxJsonUtils.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		797FB5C55BC721BFC7E2CD28 /* nlohmann_json */ = {
+			isa = PBXGroup;
+			children = (
+				42BB3EAB3368043B7C98F513 /* src */,
+			);
+			name = nlohmann_json;
+			sourceTree = "<group>";
+		};
+		7EE33BB79A063D7AD2178297 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				797FB5C55BC721BFC7E2CD28 /* nlohmann_json */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		8A8758D9CD1336FFE098E79C /* mecab */ = {
+			isa = PBXGroup;
+			children = (
+				573328E05AF10210BE4FB0E5 /* char_property.cpp */,
+				DB2C972E3AE203690DF03BF8 /* char_property.h */,
+				60B63868CAEA655FC5BD7CCB /* common.h */,
+				3295C3F416CB04928C795D95 /* config.h */,
+				40CD4917DAB331440DADDE3B /* connector.cpp */,
+				28FBC8F18E1864A4E85D7000 /* connector.h */,
+				5E3E7C3ABCA9DC7B87836AD0 /* context_id.cpp */,
+				98D63FF539ED189352F012D1 /* context_id.h */,
+				411D8DCE7D054ADE90369A8E /* darts.h */,
+				F656C134B9B59BB7D8AC0A66 /* dictionary.cpp */,
+				B9F3E3165564ECA88A787476 /* dictionary.h */,
+				7296E824058B8BC1D6626733 /* dictionary_compiler.cpp */,
+				9B2FECE7D72B1D393DA938A7 /* dictionary_generator.cpp */,
+				EA76A45632022CEE52D511C9 /* dictionary_rewriter.cpp */,
+				52F936897CC1FD65F9C8141D /* dictionary_rewriter.h */,
+				222E309D6FCD222221BAA046 /* eval.cpp */,
+				8208259AF1F9BA47D5E6B5D2 /* feature_index.cpp */,
+				BF6C06B4D495A9C9FC7D293A /* feature_index.h */,
+				E70FB2E81469D1C08A358D2F /* freelist.h */,
+				A377DB9E5BDEA6B1DDE94F2B /* iconv_utils.cpp */,
+				2A833E11360FB86A6FA8D170 /* iconv_utils.h */,
+				0AD5D8FC09ACF3AA5ED0DE10 /* lbfgs.cpp */,
+				90449B1B8B27564BD56BD886 /* lbfgs.h */,
+				49226EC4B4A6D07C7D8C1762 /* learner.cpp */,
+				9345049814BFB3DAA915193B /* learner_node.h */,
+				4D78E06B11626A2349C90D8F /* learner_tagger.cpp */,
+				43F2437E331685602959DFDD /* learner_tagger.h */,
+				6B9D6C341AB958E690DE8028 /* libmecab.cpp */,
+				2EB48118232BC9F5034E496E /* mecab.h */,
+				3EEC5B2925778468F32FBCDC /* mmap.h */,
+				D45F4A6F2F5045857F7EC701 /* nbest_generator.cpp */,
+				56B07F7BD97C059E5ED012A0 /* nbest_generator.h */,
+				7BB302FBD1E2C081250A209E /* param.cpp */,
+				822A69850D68DE28E72545DF /* param.h */,
+				483FB1A1F200B291F7A60741 /* scoped_ptr.h */,
+				2F4282ACF6E7F53D781892C8 /* stream_wrapper.h */,
+				61799520DBFED3EB3D05690B /* string_buffer.cpp */,
+				B60EED3FA2912785D5149ADF /* string_buffer.h */,
+				70341E64B653E52F4753B4A7 /* tagger.cpp */,
+				B718D5A27209ECE7B2D70070 /* thread.h */,
+				8440BDD52F0FFCF8436E8926 /* tokenizer.cpp */,
+				48164068DB2C8BE6925B328E /* tokenizer.h */,
+				FF462C5F0A882C6B5E1AE4A2 /* ucs.h */,
+				54FFC761361D3BF8A65C3430 /* ucstable.h */,
+				ED6766F08E4B116096E7FC3C /* utils.cpp */,
+				851FA9648111715E142A9C8E /* utils.h */,
+				A1A1F96CB22DA56DB2DFEF51 /* viterbi.cpp */,
+				B5494CEEBD6459FA0657E179 /* viterbi.h */,
+				A70732E3D07F9B8A9A9A2988 /* winmain.h */,
+				DE905398001ACFC4E6AFFD1D /* writer.cpp */,
+				9FD37AD95BF67E5BBF67A993 /* writer.h */,
+			);
+			name = mecab;
+			sourceTree = "<group>";
+		};
+		95D87FD7121C8B2D7D5F155C /* ofxTrueTypeFontUC */ = {
+			isa = PBXGroup;
+			children = (
+				0816FAE6729FD8D7120D0B77 /* src */,
+			);
+			name = ofxTrueTypeFontUC;
+			sourceTree = "<group>";
+		};
+		970ABB7273B4C57E89338EB7 /* ofxJsonUtilsUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3AA5C00BACC1381EC74822A5 /* src */,
+			);
+			name = ofxJsonUtilsUtils;
+			sourceTree = "<group>";
+		};
+		974D8786CF7E0F377145380B /* ofxWatchFile */ = {
+			isa = PBXGroup;
+			children = (
+				F7FAE80A33CCFFBE65D53E87 /* src */,
+			);
+			name = ofxWatchFile;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				2354AB7B3AA36643D7807748 /* ofxJsonUtils */,
+				970ABB7273B4C57E89338EB7 /* ofxJsonUtilsUtils */,
+				0957B9F4E6248627ABA70CE2 /* ofxMeCab */,
+				95D87FD7121C8B2D7D5F155C /* ofxTrueTypeFontUC */,
+				974D8786CF7E0F377145380B /* ofxWatchFile */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		C4709098A31A15183A03E72F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				3F1D42652446AA99CED163B0 /* common.hpp */,
+				817089F4BA341F36B202A6A9 /* constants.hpp */,
+				3654F7F59466507161CB9A7C /* convert.hpp */,
+				62E7DF8E328CEEB6DC16BC08 /* parse.hpp */,
+				79C188A0D0A763A1B7836308 /* utility.hpp */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* aiueoDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F47BB7666D43B88C880C32B3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				858044948022587F6A5A83B0 /* ofxMeCab.cpp */,
+				346029F202C8CC25B6BD8025 /* ofxMeCab.hpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		F7FAE80A33CCFFBE65D53E87 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				678871D2EDBC56000965682D /* ofxWatchFile.cpp */,
+				0703D8ADDE2CB2E0A71D076A /* ofxWatchFile.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		FD8BFC81264625508D93DE86 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				3D94A3FAE7A0AA4DD0FAAC2B /* bbb */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* aiueo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "aiueo" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = aiueo;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* aiueoDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "aiueo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* aiueo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				2A377547F087776F61054CD4 /* ofxMeCab.cpp in Sources */,
+				BC89325E7DAE000F5A0516EA /* char_property.cpp in Sources */,
+				9688115C260C23BE187AC0AC /* connector.cpp in Sources */,
+				142210A6F34499E823B83F04 /* context_id.cpp in Sources */,
+				C2886D1EF97AD9AD9C2011FE /* dictionary.cpp in Sources */,
+				3DD4B9E3AE841F4FE91641F9 /* dictionary_compiler.cpp in Sources */,
+				DD66C9D16D9E5EED5080E023 /* dictionary_generator.cpp in Sources */,
+				98EEB9806CEFEC2C73512199 /* dictionary_rewriter.cpp in Sources */,
+				8A48D9D61F35FB9D611DE56D /* eval.cpp in Sources */,
+				619A96B1008477BBBFA40C58 /* feature_index.cpp in Sources */,
+				13BF374C3211139CAE197CF5 /* iconv_utils.cpp in Sources */,
+				E3CF8B2AFAAAAC6E019D4CEE /* lbfgs.cpp in Sources */,
+				D6B5AC909611DA9DEF6C2743 /* learner.cpp in Sources */,
+				129D03AB84E18FA1D157A3E6 /* learner_tagger.cpp in Sources */,
+				C9396028FAE75CDE2856FCD9 /* libmecab.cpp in Sources */,
+				26FC11E9B04AFE801B2CB665 /* nbest_generator.cpp in Sources */,
+				B21A0CE3ECC303BE8BB7ECE8 /* param.cpp in Sources */,
+				74A02EE5D86C3E8C641252F0 /* string_buffer.cpp in Sources */,
+				1681012574CFD359840DE827 /* tagger.cpp in Sources */,
+				D4BEAE29879EC132A35A9932 /* tokenizer.cpp in Sources */,
+				6439A6467CF7009141BBD3AC /* utils.cpp in Sources */,
+				41CB8F23AEE490B4330C2649 /* viterbi.cpp in Sources */,
+				C7F0B74C0BD554A1C9B5BAA5 /* writer.cpp in Sources */,
+				EDD3448A1F73BF611F4D46A8 /* ofxTrueTypeFontUC.cpp in Sources */,
+				75AD5110108C83CC25DD4FFA /* ofxWatchFile.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJsonUtils/libs,
+					../../../addons/ofxJsonUtils/libs/bbb,
+					../../../addons/ofxJsonUtils/libs/bbb/json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json/src,
+					../../../addons/ofxJsonUtils/libs/bbb/json/utils,
+					../../../addons/ofxJsonUtils/src,
+					../../../addons/ofxJsonUtilsUtils/src,
+					../../../addons/ofxMeCab/libs,
+					../../../addons/ofxMeCab/libs/mecab,
+					../../../addons/ofxMeCab/src,
+					../../../addons/ofxTrueTypeFontUC/src,
+					../../../addons/ofxWatchFile/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJsonUtils/libs,
+					../../../addons/ofxJsonUtils/libs/bbb,
+					../../../addons/ofxJsonUtils/libs/bbb/json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json/src,
+					../../../addons/ofxJsonUtils/libs/bbb/json/utils,
+					../../../addons/ofxJsonUtils/src,
+					../../../addons/ofxJsonUtilsUtils/src,
+					../../../addons/ofxMeCab/libs,
+					../../../addons/ofxMeCab/libs/mecab,
+					../../../addons/ofxMeCab/src,
+					../../../addons/ofxTrueTypeFontUC/src,
+					../../../addons/ofxWatchFile/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				GCC_PREFIX_HEADER = ../../../addons/ofxMeCab/libs/mecab/mecab_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJsonUtils/libs,
+					../../../addons/ofxJsonUtils/libs/bbb,
+					../../../addons/ofxJsonUtils/libs/bbb/json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json/src,
+					../../../addons/ofxJsonUtils/libs/bbb/json/utils,
+					../../../addons/ofxJsonUtils/src,
+					../../../addons/ofxJsonUtilsUtils/src,
+					../../../addons/ofxMeCab/libs,
+					../../../addons/ofxMeCab/libs/mecab,
+					../../../addons/ofxMeCab/src,
+					../../../addons/ofxTrueTypeFontUC/src,
+					../../../addons/ofxWatchFile/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				GCC_PREFIX_HEADER = ../../../addons/ofxMeCab/libs/mecab/mecab_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJsonUtils/libs,
+					../../../addons/ofxJsonUtils/libs/bbb,
+					../../../addons/ofxJsonUtils/libs/bbb/json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json,
+					../../../addons/ofxJsonUtils/libs/bbb/json/libs/nlohmann_json/src,
+					../../../addons/ofxJsonUtils/libs/bbb/json/utils,
+					../../../addons/ofxJsonUtils/src,
+					../../../addons/ofxJsonUtilsUtils/src,
+					../../../addons/ofxMeCab/libs,
+					../../../addons/ofxMeCab/libs/mecab,
+					../../../addons/ofxMeCab/src,
+					../../../addons/ofxTrueTypeFontUC/src,
+					../../../addons/ofxWatchFile/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "aiueo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "aiueo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
